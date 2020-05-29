@@ -1,0 +1,68 @@
+2020-05-29 23:19:17,652 - hio.py -load_csv- 36 - INFO - Loading articles.csv
+2020-05-29 23:19:17,972 - extraction.py -sentence- 35 - INFO - Starting to process sentences
+2020-05-29 23:19:17,972 - extraction.py -sentence- 35 - INFO - Starting to process sentences
+2020-05-29 23:19:18,169 - extraction.py -sentence- 57 - INFO - Processing sentences
+2020-05-29 23:19:18,169 - extraction.py -sentence- 57 - INFO - Processing sentences
+2020-05-29 23:20:28,060 - extraction.py -sentence- 69 - INFO - Sentences have been processed successfully,and there are 90325 sentences
+2020-05-29 23:20:28,060 - extraction.py -sentence- 69 - INFO - Sentences have been processed successfully,and there are 90325 sentences
+2020-05-29 23:20:28,060 - extraction.py -sentence- 70 - INFO - FINISHED! using time : 1 minutes 10 seconds 
+
+2020-05-29 23:20:28,060 - extraction.py -sentence- 70 - INFO - FINISHED! using time : 1 minutes 10 seconds 
+
+2020-05-29 23:20:28,061 - extraction.py -entity- 81 - INFO - Starting to extract entity_mention
+2020-05-29 23:20:28,061 - extraction.py -entity- 81 - INFO - Starting to extract entity_mention
+2020-05-29 23:20:28,061 - extraction.py -entity- 81 - INFO - Starting to extract entity_mention
+2020-05-29 23:20:28,061 - extraction.py -entity- 82 - INFO - Extracting entity_mention
+2020-05-29 23:20:28,061 - extraction.py -entity- 82 - INFO - Extracting entity_mention
+2020-05-29 23:20:28,061 - extraction.py -entity- 82 - INFO - Extracting entity_mention
+2020-05-29 23:20:29,542 - extraction.py -entity- 93 - INFO - Entities have been extracted successfully, and there are 332016  entities
+2020-05-29 23:20:29,542 - extraction.py -entity- 93 - INFO - Entities have been extracted successfully, and there are 332016  entities
+2020-05-29 23:20:29,542 - extraction.py -entity- 93 - INFO - Entities have been extracted successfully, and there are 332016  entities
+2020-05-29 23:20:29,543 - extraction.py -entity- 94 - INFO - FINISHED! using time : 1 seconds 
+
+2020-05-29 23:20:29,543 - extraction.py -entity- 94 - INFO - FINISHED! using time : 1 seconds 
+
+2020-05-29 23:20:29,543 - extraction.py -entity- 94 - INFO - FINISHED! using time : 1 seconds 
+
+2020-05-29 23:20:29,543 - hio.py -save_csv- 47 - INFO - Saving entity.csv
+2020-05-29 23:20:29,543 - hio.py -save_csv- 47 - INFO - Saving entity.csv
+2020-05-29 23:20:29,543 - hio.py -save_csv- 47 - INFO - Saving entity.csv
+2020-05-29 23:20:29,543 - hio.py -save_csv- 47 - INFO - Saving entity.csv
+2020-05-29 23:25:47,321 - hio.py -load_csv- 36 - INFO - Loading articles.csv
+2020-05-29 23:25:47,681 - extraction.py -sentence- 35 - INFO - Starting to process sentences
+2020-05-29 23:25:47,906 - extraction.py -sentence- 57 - INFO - Processing sentences
+2020-05-29 23:26:56,370 - extraction.py -sentence- 69 - INFO - Sentences have been processed successfully,and there are 90325 sentences
+2020-05-29 23:26:56,370 - extraction.py -sentence- 70 - INFO - FINISHED! using time : 1 minutes 8 seconds 
+
+2020-05-29 23:26:56,371 - extraction.py -entity- 81 - INFO - Starting to extract entity_mention
+2020-05-29 23:26:56,371 - extraction.py -entity- 82 - INFO - Extracting entity_mention
+2020-05-29 23:26:57,809 - extraction.py -entity- 93 - INFO - Entities have been extracted successfully, and there are 332016  entities
+2020-05-29 23:26:57,809 - extraction.py -entity- 94 - INFO - FINISHED! using time : 1 seconds 
+
+2020-05-29 23:26:57,809 - hio.py -save_csv- 47 - INFO - Saving entity.csv
+2020-05-29 23:27:46,284 - hio.py -load_csv- 36 - INFO - Loading articles.csv
+2020-05-29 23:27:46,608 - extraction.py -sentence- 35 - INFO - Starting to process sentences
+2020-05-29 23:27:46,817 - extraction.py -sentence- 57 - INFO - Processing sentences
+2020-05-29 23:27:46,893 - extraction.py -sentence- 69 - INFO - Sentences have been processed successfully,and there are 100 sentences
+2020-05-29 23:27:46,893 - extraction.py -sentence- 70 - INFO - FINISHED! using time : 0 seconds 
+
+2020-05-29 23:27:46,893 - extraction.py -entity- 81 - INFO - Starting to extract entity_mention
+2020-05-29 23:27:46,893 - extraction.py -entity- 82 - INFO - Extracting entity_mention
+2020-05-29 23:27:46,896 - extraction.py -entity- 93 - INFO - Entities have been extracted successfully, and there are 384  entities
+2020-05-29 23:27:46,896 - extraction.py -entity- 94 - INFO - FINISHED! using time : 0 seconds 
+
+2020-05-29 23:27:46,896 - hio.py -save_csv- 47 - INFO - Saving entity.csv
+2020-05-29 23:28:17,880 - hio.py -load_csv- 36 - INFO - Loading articles.csv
+
+2020-05-29 23:28:18,198 - extraction.py -sentence- 35 - INFO - Starting to process sentences
+2020-05-29 23:28:18,400 - extraction.py -sentence- 57 - INFO - Processing sentences
+2020-05-29 23:28:18,478 - extraction.py -sentence- 69 - INFO - Sentences have been processed successfully,and there are 100 sentences
+2020-05-29 23:28:18,478 - extraction.py -sentence- 70 - INFO - FINISHED! using time : 0 seconds 
+
+2020-05-29 23:28:18,478 - extraction.py -entity- 81 - INFO - Starting to extract entity_mention
+2020-05-29 23:28:18,478 - extraction.py -entity- 82 - INFO - Extracting entity_mention
+2020-05-29 23:28:18,480 - extraction.py -entity- 93 - INFO - Entities have been extracted successfully, and there are 384  entities
+2020-05-29 23:28:18,480 - extraction.py -entity- 94 - INFO - FINISHED! using time : 0 seconds 
+
+2020-05-29 23:28:18,480 - hio.py -save_csv- 47 - INFO - Saving entity.csv
+
