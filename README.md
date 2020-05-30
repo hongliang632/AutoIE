@@ -50,7 +50,7 @@ pyltp的安装
 ├── ltp_ner                   # 命名实体识别
 │  ├── extraction.py          # 实体识别主程序
 │  ├── force.py               # 自定义词表匹配
-│  ├── hio.py                 # 训练
+│  ├── hio.py                 # IO程序
 │  ├── hlog.py                # log 日志输出
 ├── ltp_data                  # LTP模型存放目录(也可以在main.py里指定ltp位置)
 ├── project                   # 项目目录
