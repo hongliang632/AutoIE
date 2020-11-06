@@ -66,7 +66,6 @@ class force_segmentor(object):
 
     def merge(self, sentence, words):
         tag = {}
-
         indexs_start = []
         index_distance = {}
 
@@ -75,36 +74,36 @@ class force_segmentor(object):
         if len(found_list) == 0:
             return words, tag
         for found_word in found_list:
-
             index_start = -1
             strm = ''
             for i, word in enumerate(words):
                 wl = len(word)
-                if (index_start == -1 and word == found_word[0:wl]):
+                if index_start == -1 and word == found_word:
+                    index_start = i
+                    indexs_start.append(index_start)
+                    index_distance[index_start] = [i - index_start + 1, word]
+                elif index_start == -1 and word == found_word[0:wl]:
                     index_start = i
                     strm += word
-                elif (index_start != -1):
+                elif index_start != -1:
                     strm += word
-                    if (strm == found_word):
+                    if strm == found_word:
                         if index_start not in indexs_start:
                             indexs_start.append(index_start)
-
                         index_distance[index_start] = [i - index_start + 1, found_word]
                         index_start = -1
                         strm = ''
-                    elif (strm not in found_word):
+                    elif strm not in found_word:
                         index_start = -1
                         strm = ''
-
         result = []
         k = 0
         i = 0
         # print indexs_start,index_distance
-        while (i < len(words)):
+        while i < len(words):
             word = words[i]
-            if (i in indexs_start):
+            if i in indexs_start:
                 result.append(index_distance[i][1])
-
                 tag[k] = 'S-' + self.tagslist[index_distance[i][1]]
                 i += index_distance[i][0]
                 k += 1
@@ -138,3 +137,14 @@ class force_segmentor_item(object):
 
     def get_tags(self):
         return self.tags
+
+
+a = force_segmentor()
+a.load('../project/lexicon')
+sent = '-简介梁左与丈夫英达梁欢，女，梁欢和梁天的妹妹，英达的现任妻子，艾尔马林38。'
+words = ['-', '简介', '梁','左', '与', '丈夫', '英达', '梁欢', '，', '女', '，', '梁欢', '和', '梁天', '的', '妹妹', '，', '英达', '的', '现任', '妻子',
+         '，', '艾尔马林38', '。']
+b = a.merge(sent, words)
+words = b[0]
+tag = b[1]
+print(words, tag)

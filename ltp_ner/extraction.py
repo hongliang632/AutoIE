@@ -25,7 +25,7 @@ warnings.filterwarnings("ignore")
 Path = str
 
 
-# 处理entence
+# 处理sentence
 def sentence(articles: List[Dict], project: Path = os.getcwd(),
              ltp_dir=os.path.abspath(os.path.join(os.path.realpath(__file__), "../..")) + '/ltp_data') -> List[Dict]:
     logger = hlogger(project)
@@ -79,7 +79,6 @@ def entity(sentences: List[Dict], tag: List, project: Path = os.getcwd()) -> Lis
     logger.info('Starting to extract entity_mention')
     logger.info('Extracting entity_mention')
 
-    results = {}
     length = 0
     for row in sentences:
         # sentence_id, sentence_text, ner_tags
@@ -138,12 +137,12 @@ def extract_entity(tokens, ner_tags, tag) -> List[Dict]:
         # 找到第一个被标注的词
         first_indexes = (i for i in range(num_tokens) if
                          t in ner_tags[i] and (i == 0 or t not in ner_tags[i - 1]) and re.match(
-                             u'^[\u4e00-\u9fa5\u3040-\u309f\u30a0-\u30ffa-zA-Z]+$', str(tokens[i])) != None)
+                             u'^[\u4e00-\u9fa5\u3040-\u309f\u30a0-\u30ffa-zA-Z1-9]+$', str(tokens[i])) is not None)
         for begin_index in first_indexes:
             # 找到后续被标注的词
             end_index = begin_index + 1
             while end_index < num_tokens and t in ner_tags[end_index] and re.match(
-                    u'^[\u4e00-\u9fa5\u3040-\u309f\u30a0-\u30ffa-zA-Z]+$', str(tokens[end_index])) != None:
+                    u'^[\u4e00-\u9fa5\u3040-\u309f\u30a0-\u30ffa-zA-Z1-9]+$', str(tokens[end_index])) is not None:
                 end_index += 1
             end_index -= 1
 
@@ -151,7 +150,7 @@ def extract_entity(tokens, ner_tags, tag) -> List[Dict]:
             temp_text = mention_text
 
             # 判断实体是否过长以及去掉不符合要求的实体
-            if temp_text == None or temp_text == '':
+            if temp_text is None or temp_text == '':
                 continue
             # if end_index - begin_index >= 25:
             #   continue
